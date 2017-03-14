@@ -38,6 +38,3 @@ document.getElementById('selection_bubble').addEventListener("click", function(e
 	e.stopPropagation();
 });
 
-var isInstalledNode = document.createElement('div');
-isInstalledNode.id = 'extension-installed-with-id-ocemjnadfmjophkhhgeekjmkeecipngm';
-document.body.appendChild(isInstalledNode);
