@@ -10,8 +10,8 @@ document.body.appendChild(bubbleDOM);
 
 // Lets listen to mouseup DOM events.
 document.addEventListener('mouseup', function (e) {
-  var selection = window.getSelection().toString();
-  if (selection.length > 0) {
+  var selection = window.getSelection().toString().replace(/\s+/g, '');
+  if (selection.length === 13) {
     renderBubble(e.pageX - 12.5, e.pageY + 12.5, selection);
   }
 }, false);
