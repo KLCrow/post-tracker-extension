@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', function() {
-	window.open('http://www.post-tracker.info');
+	window.open('http://post-tracker.info');
 }, false);

@@ -21,7 +21,7 @@ document.addEventListener('mouseup', function (e) {
 document.addEventListener('mousedown', function (e) {
   bubbleDOM.style.visibility = 'hidden';
   if (e.target.id == "selection_bubble") {
-  	window.open('http://www.post-tracker.info/search?&code=' + postTrackSelection);
+  	window.open('http://post-tracker.info/search?&code=' + postTrackSelection);
   }
 }, false);
 
@@ -34,7 +34,7 @@ function renderBubble(mouseX, mouseY, selection) {
 };
 
 document.getElementById('selection_bubble').addEventListener("click", function(e){
-	window.open('http://www.post-tracker.info/search?&code=' + postTrackSelection);
+	window.open('http://post-tracker.info/search?&code=' + postTrackSelection);
 	e.stopPropagation();
 });
 
